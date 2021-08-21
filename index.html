@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Hamburger Menu: JavaScript + HTML + CSS</title>
+  <!-- Our CSS File-->
+  <!-- Fontawesome Librbary -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        
+            <section class="navbar">
+                
+
+                    <!-- menu bar -->
+
+                    <nav class="navbar">
+                        <div class="nav-con">
+                        <div class="brand-title"><ul>
+                            <li class="nav-service">service</li>
+                            <li class="nav-name">N.Romanov</li>
+                        </ul></div>
+                        <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                        <div class="navbar-links">
+                            <ul>
+                                <ul >
+                                    <li  class="tel" href="#">+7 (111) 111-11-11</li>
+                                    <li href="#"><button>Перезвоните мне</button></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    </nav>
+    
+                    <!-- menu bar -->
+
+
+
+                
+        </section>
+
+        <section class="body-section">
+                <div class="body-info">
+                    <p class="body-text">Ремонт компьютерной техники от частного мастера
+                        <span>Николай Романов</span></p>
+                    <p class="info-p">Ремонт компьютеров и <br/>
+                        ноутбуков быстро и качественно</p>
+                    <button>Бесплатная косультация</button>
+                </div>
+                <div>
+                    <img src="./assets/images/comput.png" class="body-img">
+
+                </div>
+                
+        </section>
+        
+        <section>
+            <div class="card-con">
+                <div class="card"><p>Удаление вирусов</p></div>
+                <div class="card">Сборка компьютера</div>
+                <div class="card">Настройка WiFi роутеров</div>
+                <div class="card">Чистка компьютера</div>
+                <div class="card">Установка и настройка лицензионного ПО</div>
+                <div class="card">Бесплатная консультация</div>
+            </div>
+    </section>
+
+    <section>
+        <div class="large-cards-h1"><p>Почему стоит обратиться ко мне?</p></div>
+        <div class="large-cards">
+
+            <div class="ques-card">
+                <h1>Срочный выезд в течение 3 минут</h1>
+                <p>Срок ремонта не более 2 часов с момента проведения диагностики</p>
+                <img class="ques-card-img" src="./assets/icons/Vector 6.svg">
+                <img class="delivery-img" src="./assets/icons/delivery.svg">
+            </div>
+
+            <div  class="ques-card">
+                <h1>Использование оригинальных запчастей</h1>
+                <p>В работе использую только запчасти от производителей.</p>
+                <img class="question-img" src="./assets/icons/Vector 6.svg">
+                <div class="diamond-img"><img  src="./assets/icons/diamond.svg" alt=""></div>
+            </div>
+
+            <div class="ques-card">
+                <h1>93% поломок устраняю в течение часа</h1>
+                <p>Быстрое устранение поломки и ремонт в день обращения</p>
+                <img class="question-img" src="./assets/icons/Vector 6.svg">
+                <img class="clock-img" src="./assets/icons/clock.svg" alt="">
+            </div>
+
+            <div class="ques-card">
+                <h1>Предоставление чека и гарантии.</h1>
+                <p>После работы даю гарантийный бланк,<br/> который заверяю 
+                    <br/>   официальной печатью.</p>
+                    <img class="price-img" src="./assets/icons/price.svg" alt="">
+                <img class="qimg" src="./assets/icons/Vector 6.svg">
+            </div>
+        </div> 
+    </section>
+
+    <section class="survey-section">
+        <div class="quiz-section">
+            <h1>Чтобы узнать стоимость ремонта</h1>
+            <p>ответьте всего на<span> 5 вопросов</span></p>
+        </div>
+            <div class="survey-con">
+                <div class="questions-con">    
+          <div class="quiz" id="quiz">
+              <div class="quiz-questions" id="questions"></div>
+              <div><img class="laptop" src="./assets/images/laptop.png" alt=""></div>
+
+              <div class="btn-con"> 
+                  <button class="btn-pre" id="btn-pre" ><img src="./assets/icons/left-icon.svg" ></button>
+              <div class="quiz-indicators" id="indicator">1/10</div>   
+              <button class="btn-next" id="btn-next" disabled><img src="./assets/icons/right-icon.svg" ></button>
+          </div>
+          <!-- <button class="btn-restart" id="btn-result">Result</button> -->
+          
+          <div class="info-cons">
+          <div class="result-con">
+          <div class="quiz-results" id="results">
+              <div class="quiz-results-item">
+                  <div class="quiz-results-item_question"><p>Оставьте свой номер телефона,<br/> чтобы можно было связаться с<br/> вами и сообщить цену</p></div>
+                      <ul class="quiz-results-item_answers">
+                          <li> <input class="result-input1" type="text" placeholder="Ваше имя"></li>
+                          <li><input class="result-input2" type="number" placeholder="Ваш телефон"></li>
+                          <li><button class="result-button">Бесплатная консультация</button></li>
+                      </ul>
+                  </div>
+          </div>  
+      </div> 
+     
+      <div class="notebook"><img src="./assets/images/laptop.png" alt=""></div>
+          </div>
+        </div>
+    </div>
+</div>
+           
+    
+    </section>
+
+    <section class="about-section">
+        <div class="about-h1"><h1>Обо мне</h1></div>
+        <div class="about-info">
+            
+            <div><img class="about-image2" src="./assets/images/about-img.png"></div>
+            <div class="about-grid">
+            <div><img class="about-image1" src="./assets/images/rectangle.png" alt=""></div>
+            <div class="about-data">
+                <h1>Здравствуйте<br/>
+                Рад приветствовать вас на своём сайте
+                <br/>
+                <br/>
+                Меня зовут Андрей, я - компьютерный мастер Занимаюсь ремонтом компьютеров на дому
+            </h1>
+            <button class="info-button">Бесплатная косультация</button>
+            </div>
+        </div>
+        </div>
+        <div class="ww">
+        <div class="about-number"> 
+            <div class="number-info-grid1">
+                <div class="ee">
+                <div class="number1">01</div>
+                <div class="line-1"></div>                
+                <div><h1>Краткая информация обо мне</h1>
+                <p>Интересуюсь компьютерами и всем, что с ними связано еще со школы, еще тогда сам переставлял систему и делал апгрейд первого компьютера.
+                    Работаю в основном на выезде, есть большой набор инструментов, в том числе пост карты и программатор.
+                    Постоянно совершенствую свои знания в области диагностики, ремонта и настройки компьютерной техники. </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="number-info-grid2">
+                <div class="ee">
+                    <div class="number1">02</div>
+                    <div class="line-2"></div>
+                <div><h1>Образование</h1>
+                <p >Московский авиационный институт, факультет<br/> систем управления, информатики и<br/> электроэнергетики, специальность – <br/>вычислительные машины, системы и сети</p></div>
+            </div>
+            </div>
+
+            <div class="number-info-grid3">
+                <div class="ee">
+                    <div class="number1">03</div>
+                    <div class="line-3"></div>
+                <div><h1>Договор и гарантия</h1>
+                <p>Заключаю договор, если задача<br/>крупная.Если договор не нужен,<br/>гарантию даю отдельно.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="contact">
+        <div class="contact-h1"><h1>Контакты</h1></div>
+        <div class="contact-info">
+        <div class="contact-card">
+            <div class="contact-inner">
+            <p class="tel">Телефон<br/>
+                +7 (111) 111-11-11</p>
+            <p>Выезд на дом<br/>
+                <span>Приеду срочно и днем, и ночью!<br/></span>
+                Без выходных</p>
+            <div class="card-input">
+                <input type="number" placeholder="Телефон">
+                <button>Отправить</button>
+            </div>
+            
+            <h6 class="about-cost">Цены дешевле компаний на 30%</h6>
+         </div>
+    </div>
+        <div class="cl"><img src="./assets/images/mechanic.png" class="contact-img"></div>
+        </div>
+    </section>
+
+    <section class="footer"> 
+        <div class="foot-con">
+            <div>
+                <ul>
+                    <li class="foot-text">service</li>
+                    <li class="foot-name">N.Romanov</li>
+                </ul>
+            </div>
+            <div >
+                <ul class="foot-ul">
+                    <li class="foot-tel">+7 (111) 111-11-11</li>
+                    <li><button class="foot-button">Перезвоните мне</button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    </div>
+    
+    <script src='js/scripts.js'></script>
+
+</body>
+</html>
